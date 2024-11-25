@@ -1,0 +1,17 @@
+name: TEST
+on:
+  push:
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: Test
+
+    steps:
+      - run: echo "hello world"
