@@ -23,4 +23,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "hello world"
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            console.log(context);
