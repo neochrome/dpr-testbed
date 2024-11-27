@@ -9,21 +9,9 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    needs:
-      - auto-deploy
 
     environment:
       name: Test
 
     steps:
       - run: echo "hello world"
-
-
-  auto-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/github-script@v7
-        with:
-          script: |
-            console.log(context);
