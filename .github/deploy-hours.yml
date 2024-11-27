@@ -1,9 +1,9 @@
 # Approve a deployment if time matches one of these
-approve:
+allow:
   - "* 8-15 * * 1-5" # week days 8-15
 
 # Reject a deployment if time matches any of the these
-reject:
+deny:
   - "* 12-13 * * *" # during lunch
 
 # Approve if commit message matches
