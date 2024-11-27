@@ -1,10 +1,10 @@
 # Approve a deployment if time matches one of these
 allow:
-  - "* 8-15 * * 1-5" # week days 8-15
+  - "* 7-14 * * 1-5" # week days
 
 # Reject a deployment if time matches any of the these
 deny:
-  - "* 12-13 * * *" # during lunch
+  - "* 11-12 * * *" # during lunch
 
 # Approve if commit message matches
 override: "force-deploy"
