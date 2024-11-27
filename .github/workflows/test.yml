@@ -9,9 +9,18 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    depends-on:
+      - auto-deploy
 
     environment:
       name: Test
+
+    steps:
+      - run: echo "hello world"
+
+
+  auto-deploy:
+    runs-on: ubuntu-latest
 
     steps:
       - run: echo "hello world"
